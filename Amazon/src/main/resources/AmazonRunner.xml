@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Selenium Test Suite" parallel="false">
+
+    <parameter name="cloud" value="false"/>
+    <parameter name="envName" value="browserstack"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="browserVersion" value="78.0"/>
+    <parameter name="url" value="https://www.amazon.com"/>
+    <parameter name="platform" value="mac"/>
+
+    <test name="Automation tests">
+        <classes>
+            <class name="amazon.HomepageOnlineShopping"/>
+        </classes>
+    </test>
+</suite>
+
+
